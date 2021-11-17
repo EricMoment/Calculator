@@ -1,0 +1,135 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(167, 219, 243), rgb(6, 191, 105));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calculator-grid {
+    border: 10px solid rgb(31, 31, 31);
+    background-color:lightsteelblue;
+    border-radius: 20px;
+    padding: 35px 30px;
+    width: 50%; /* or 600px */
+    height: 700px; /* or other height */
+    gap: 30px;
+}
+
+.outputbars {
+    border: 5px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.previousOperand,
+.currentOperand {
+    border-radius: 6px;
+    padding: 0 4px;
+    font-size: 16px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: flex-end;
+}
+.previousOperand {
+    background-color: rgb(172, 159, 255);
+    font-size: 4.2vw;  /* change by outside border */
+    font-weight: lighter;
+    min-height: 40px;
+}
+.currentOperand { /* 1.5 * previousOperand */
+    background-color: rgb(199, 199, 240);
+    font-size: 5.9vw; /* change by outside border */
+    font-weight: normal;
+    min-height: 60px;
+}
+
+.buttons { /* refer to outputbars */
+    display: flex;
+    border: 5px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    flex: 2.5;
+}
+
+.equal,
+.operators,
+.row-1,
+.clear,
+.delete,
+.numbers,
+.point,
+.r2l0 {  
+    display: flex;
+    flex: 1;
+}
+
+body,
+.calculator-grid,
+.outputbars,
+.left-buttons,
+.right-buttons,
+.row-2-left,
+.r2rdot369,
+.r2l147,
+.r2l258 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+ .previousOperand, 
+ .row-2-left {  
+    display: flex;
+    flex: 2;
+
+}
+
+ .currentOperand,
+ .left-buttons,
+ .r2l1-8 {  
+    display: flex;
+    flex: 3;
+}
+
+.row-2 {  
+    display: flex;
+    flex: 4;
+}
+
+.numbers,
+.operators,
+.point,
+.equal,
+.clear,
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    border-radius: 6px;
+    border: none;
+}
+
+.numbers,
+.point {
+    background-color: khaki;
+    border: 1px solid rgb(31, 31, 31);;
+}
+.clear,
+.delete {
+    background-color: lightgray;
+    border: 1px solid rgb(31, 31, 31);
+}
+.operators {
+    background-color: lightcoral;
+    border: 1px solid rgb(31, 31, 31);
+}
+.equal {
+    background-color: rgb(201, 244, 115);
+    border: 1px solid rgb(31, 31, 31);
+}
